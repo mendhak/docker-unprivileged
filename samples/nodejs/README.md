@@ -1,8 +1,8 @@
 ## Node JS
 
-The official NodeJS image comes with an unprivileged user, `node`.  
+The official NodeJS image conveniently comes with an unprivileged user, `node`.  
 
-It's a simple matter of setting `USER node` in the Dockerfile, and copying files with `--chown=node:node`.  
+It's a simple matter of setting [`USER node`](Dockerfile#L5) in the Dockerfile, and copying the application files with [`--chown=node:node`](Dockerfile#L9).  
 
 For the demo, start the web server:
 
