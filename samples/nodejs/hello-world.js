@@ -14,6 +14,11 @@ process.on('SIGINT', () => {
   process.exit(0)
 })
 
+process.on('SIGTERM', () => {
+    console.info("Interrupted")
+    process.exit(0)
+  })
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })

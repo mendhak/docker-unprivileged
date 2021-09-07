@@ -3,6 +3,7 @@ version: '3.7'
 services: 
     webserver:
         image: rootlessnode
+        container_name: rootlessnode
         build:
             context: .
             dockerfile: Dockerfile
