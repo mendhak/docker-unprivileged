@@ -1,4 +1,4 @@
-## Node JS
+## Running Node JS with a rootless unprivileged user
 
 The official NodeJS image conveniently comes with an unprivileged user, `node`.  
 

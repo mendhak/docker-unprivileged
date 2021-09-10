@@ -1,4 +1,4 @@
-## Nginx
+## Running Nginx with a rootless unprivileged user
 
 This sample uses the official nginx image from Docker hub.  
 
