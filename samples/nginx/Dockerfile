@@ -11,6 +11,5 @@ RUN touch /var/run/nginx.pid && \
 
 USER nginx
 
-COPY --chown=nginx:nginx ./nginx.conf /etc/nginx/nginx.conf
 COPY --chown=nginx:nginx ./default.conf /etc/nginx/conf.d/default.conf
 COPY --chown=nginx:nginx index.html /usr/share/nginx/html/
