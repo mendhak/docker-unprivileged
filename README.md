@@ -9,4 +9,5 @@ A collection of Docker samples running as unprivileged users.
 ## Samples
 
 [NodeJS sample](samples/nodejs/)  
-[Nginx sample](samples/nginx/)
+[Nginx sample](samples/nginx/)  
+[ASP.NET Core sample](samples/dotnet/)  
