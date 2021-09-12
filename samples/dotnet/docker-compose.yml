@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
     webserver:
-        image: rootlessaspnetcore
-        container_name: rootlessaspnetcore
+        image: unprivilegedaspnetcore
+        container_name: unprivilegedaspnetcore
         build:
             context: .
             dockerfile: Dockerfile

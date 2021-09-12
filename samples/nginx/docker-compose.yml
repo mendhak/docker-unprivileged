@@ -1,9 +1,9 @@
 version: '3.7'
 
-services: 
+services:
     webserver:
-        image: rootlessnginx
-        container_name: rootlessnginx
+        image: unprivilegednginx
+        container_name: unprivilegednginx
         build:
             context: .
             dockerfile: Dockerfile

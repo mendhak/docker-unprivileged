@@ -1,9 +1,9 @@
 version: '3.7'
 
-services: 
+services:
     webserver:
-        image: rootlessnode
-        container_name: rootlessnode
+        image: unprivilegednode
+        container_name: unprivilegednode
         build:
             context: .
             dockerfile: Dockerfile

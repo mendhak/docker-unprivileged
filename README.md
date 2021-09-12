@@ -4,7 +4,7 @@ A collection of Docker samples running as unprivileged users.
 
 ## Background
 
-//TODO
+By default, processes in Docker containers run as the root user.  
 
 ## Samples
 

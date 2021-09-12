@@ -1,4 +1,4 @@
-## Running ASP.NET Core with a rootless unprivileged user
+## Running ASP.NET Core with an unprivileged user
 
 The ASP.NET Core image does not come with a built-in unprivileged user, so we must [create it ourselves](Dockerfile#L14) and set it as the owner of the `/app` directory.  
 
