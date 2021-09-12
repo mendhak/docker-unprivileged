@@ -9,3 +9,26 @@ We have to [chown several paths](Dockerfile#L5) so that the process running unde
 Because nginx is now running as an unprivileged user, we must also [set the port to a number higher than 1024](default.conf#L2) in the `default.conf`.  
 
 
+## Demo
+
+For the demo, start the web server:
+
+```
+docker-compose up
+```
+
+Browse to http://localhost:3000/
+
+In a new window, run whoami to see the user the process is running as:  
+
+```
+docker-compose exec webserver whoami
+# nginx
+```
+
+
+And remember to clean up
+
+```
+docker-compose down
+```
