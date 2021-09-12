@@ -26,8 +26,22 @@ docker-compose exec webserver whoami
 # nginx
 ```
 
+Try mounting a volume, and you should fail. 
 
-And remember to clean up
+```
+docker-compose exec webserver mount /dev/null /mnt/test
+# mount: permission denied (are you root?)
+```
+
+Try installing nmap, and you should fail. 
+
+```
+docker-compose exec webserver apk add nmap
+# ERROR: Unable to lock database: Permission denied
+# ERROR: Failed to open apk database: Permission denied
+```
+
+You can stop the container now, and don't forget to clean up
 
 ```
 docker-compose down
